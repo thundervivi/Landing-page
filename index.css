@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, ;
+    font-family: Roboto;
+    scroll-behavior: smooth;
 }
 body{
     display: flex;
@@ -162,4 +163,7 @@ blockquote{
     align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
+}
+a{
+    color: #E5E7EB;
 }
