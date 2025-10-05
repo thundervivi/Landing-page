@@ -19,12 +19,11 @@ img{
     flex-direction: column;
     border: 2px solid;
     justify-content: space-around;
-    background-color: #1F2937;
-    flex: 1;
+    background-color: #1F2937
 }
 .hero{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
 }
 .second-section{
     margin: 100px;
@@ -32,7 +31,6 @@ img{
     justify-content: center;
     align-items: center;
     gap: 32px;
-    /* justify-content: space-around; */
 }
 ul{
     display: flex;
@@ -86,14 +84,10 @@ img{
 .img{
     margin-left: 10px;
     width: 150px;
-    padding: 0;
-    /* border: 2px solid red; */
-    flex-grow: 2;
 }
 .resize{
     width: 150px;
     height: auto;
-    flex: 1;
 }
 .img > img{
     border: 3px solid #3882F6;
@@ -138,7 +132,6 @@ blockquote{
     margin: 52px;
     padding: 50px;
     justify-content: space-between;
-
     gap: 21px;
     background-color: #3882F6;
     border-radius: 10px;
