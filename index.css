@@ -1,3 +1,10 @@
+:root{
+    --bg-color-header:  #1F2937;
+    --txt-color:  #f9faf8ea;
+    --text-000: hsl(48 33.3% 97.1%);
+    --signup-clr: #3882F6;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +26,7 @@ img{
     flex-direction: column;
     border: 2px solid;
     justify-content: space-around;
-    background-color: #1F2937
+    background-color: var(--bg-color-header);
 }
 .hero{
     display: flex;
@@ -41,13 +48,14 @@ a{
     text-decoration: none;
 }
 .logo{
+    padding-top: 5px;
     font-size: 24px;
-    color: #F9FAF8;
+    color: var(--txt-color);
 }
-.h1{
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
+h1{
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--txt-color);
 }
 .txt{
     font-size: 18px;
@@ -60,11 +68,19 @@ img{
     margin-top: 70px;
 }
 .btn{
+    border: none;
+    outline: none;
+    margin-top: 10px;;
     background-color: #3882F6;
-    height: 41px;
-    width: 100px;
+    height: 35px;
+    width: 78px;
     border-radius: 9px;
-    color: white;
+    color: var(--text-000);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(252, 247, 247);
+    color: var(--bg-color-header)
 }
 .images{
     display: flex;
@@ -89,7 +105,7 @@ img{
     width: 150px;
     height: auto;
 }
-.img > img{
+.signup{
     border: 3px solid #3882F6;
     border-radius: 10px;
 }
@@ -133,16 +149,21 @@ blockquote{
     padding: 50px;
     justify-content: space-between;
     gap: 21px;
-    background-color: #3882F6;
-    border-radius: 10px;
+    background-color: var(--signup-clr);
+
 }
-.signup > button{
+.signup-2-btn{
+    border: 1px solid white;
+    cursor: pointer;
     width: 100px;
-    height: 30px;
-    border: 2px solid white;
+    height: 40px;
     border-radius: 12px;
     background-color: #3882F6;
-    color: whitesmoke;
+    color: var(--txt-color);
+}
+.signup-2-btn:hover{
+    background-color: #ffffffd8;
+    color: var(--signup-clr)
 }
 .white{
     color: white;
@@ -159,5 +180,8 @@ blockquote{
     color: #F9FAF8;
 }
 a{
-    color: #E5E7EB;
+    color: #e5e7ebda;
+}
+.second-info{
+    padding-top: 13px;
 }
